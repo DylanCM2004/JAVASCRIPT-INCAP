@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pago de salario</title>
+</head>
+<body>
+    <center>
+        <h1>PAGO/HORAS DE SALARIO EMPLEADO</h1>
+    <script>
+        let dias;
+        let vdia;
+        let subtotal;
+        // cantidad de dias trabajados
+        dias=parseInt(prompt("Ingrese la cantidad de dias trabajados"));
+        vdia=parseInt(prompt("Ingrese valor dia a pagar"));
+        //proceso
+        subtotal=dias*vdia;
+        //salida
+        document.write("dias trabajados:   "+dias+"<br>");
+        document.write("valor dia:    "+vdia+"<br>");
+        document.write("Salario pagado al empleado  $$: "+subtotal+"<br>");
+        document.write(".....................................................");
+    </script>
+    </center>
+</body>
+</html>

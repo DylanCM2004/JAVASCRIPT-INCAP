@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>SUPERMERCADO EL BARATO</h2>
+        <h3>VUELTAS X COMPRAS</h3>
+        <script>
+            //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por una mensaje de alerta al usuario, luego permita la captura del monto en efectivo pagado y validar cancelación total del monto de la factura, finalmente enviar mensaje Gracias por su compra
+            let producto, precio, cantidad, total, saldo, pago;
+            // entrada
+            producto=prompt("Ingrese nombre producto:");
+            precio=parseInt(prompt("Ingrese precio unitario:"));
+            cantidad=parseInt(prompt("Ingrese cantidad comprada:"));
+
+            //Proceso
+            total=cantidad*precio;
+
+            //Salida
+            alert("Su valor a pagar en caja es...."+"\n"+total);
+            document.write("Su valor a pagar en caja es ...$"+total+"<br>"+"<br>");
+            //
+            pago=parseInt(prompt("Ingrese monto en efectivo pagado en caja"));
+            saldo = total-pago;
+            if (pago==total){
+                alert("Tome su recibo, gracias por su compra")
+            }
+            else{
+                alert("tome su recibo y sus vueltas, gracais por su compra"+ saldo+"\n")
+            }
+            document.write("efectivo por compra... $"+pago+ "<br>")
+            document.write("efectivo por vueltas... $"+saldo+ "<br>")
+            document.write("*******************************************************************************")
+        </script>
+    </center>
+</body>
+</html>

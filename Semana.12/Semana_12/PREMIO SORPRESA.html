@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>ddd</h1>
+        <h2>PREMIO SORPRESA POR COMPRAS</h2>
+        <script>
+            const SPeso = new Intl.NumberFormat('es-CO', {
+                style: 'currency',
+                currency: 'COP',
+                minimumFractionDigits: 0
+            });
+            // variables
+            let producto, precio, cantidad, fpago, total;
+            //entrada
+            producto=prompt("Ingrese nombre producto");
+            precio=parseInt(prompt("Ingrese precio producto"));
+            cantidad=parseInt(prompt("Ingrese cantidad a comprar"));
+            fpago=parseInt(prompt("Ingrese forma pago [1=Efectivo 2=Nequi 3=Tarjeta crédito]"));
+            ;
+            // proceso
+            total = cantidad * precio;
+            //salida
+            document.write("************* PROMOCION DE ANIVERSARIO *************" + "<br>");
+            document.write("Producto comprado:..." + producto+ "&nbsp&nbsp" +"Precio producto..." + SPeso.format(precio)+"&nbsp&nbsp"+"Cantidad comprada..." + cantidad+"<br>"+"<br>"+"<br>");
+            
+            alert("su valor a pagar es $...." +SPeso.format(total));
+
+            if (fpago==1 && total>=50000){
+            document.write("Obsequio sorpresa..TACO GALLETA"+"<br>");
+            }
+            else{
+            document.write("Obsequio sorpresa..Chocolatina"+"<br>");
+            }
+            document.write("GRACIAS POR SU COMPRA"+"<br>");
+            document.write("******************************************"+"<br>");
+        </script>
+    </center>
+</body>
+</html>
