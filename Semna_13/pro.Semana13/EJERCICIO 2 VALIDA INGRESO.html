@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contraseña</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>VALIDACION INGRESO DE SESION</h1>
+        <h3>CICLO CONTRASEÑA</h3>
+        <br><br>
+        <p>El usuario tendra 3 intentos para ingrersar correctamnte la contraseña</p>
+        <script>
+            let datof=0;
+            let sw=0; // switch apagado (para verificar el ingreso del usuario)
+            let clave =123;
+            for(f=1;f<=3;f++){
+                datof = parseInt(prompt("INGRESE CONTRASEÑA DELÑ SISTEMA"));
+                if(datof==clave){
+                    swal("ESTIMADO USURARIO", "ACCESO PERMITIDO","success");
+                    document.write("ACCESO PERMITIDO");
+                    sw=1; // el switch se enciende 
+                    break; // finaliza el script
+                }
+            }
+            if(sw==0){
+                swal("ESTIMADO USURARIO", "ACCESO DENEGADO","error")
+                document.write("<br>"+ "<br>");
+                document.write("ACCESO DENEGADO, SU CUENTA SERA BANEADA POR LOS PROXIMOS 30 DIAS"+ "<br>");
+                document.write("Si se cometio un error "+ "<br>");
+                document.write("puede comunicarse por nuestra linea movil de atención y atenderemos su caso" + "<br>");
+            }
+        </script>
+    </center>
+</body>
+</html>

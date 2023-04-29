@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>GENERACION DE NUMEROS IMPAR</h2>
+        <h3>Ingrese por teclado números de inicio y final de ciclo</h3>
+        <script>
+        let inicio, final;
+        let num=0;
+        //Entrada
+        inicio=parseInt(prompt("Ingrese número inicial del rango"));
+        final=parseInt(prompt("Ingrese número final del rango"));
+        //Proceso Ciclo -For
+        for (f=inicio;f<=final;f++){
+        //Condicional para validar numero par con metodo modulo
+            if (f%2==1){
+                document.write("<br>");
+                document.write("NUMERO PAR..."+f+"<br>");
+                num++;//contar cantidad de numeros impares
+            }
+        }
+        document.write("<br>");
+        document.write("CANTIDAD DE NUMEROS IMPAR GENERADOS..."+num+"<br>");
+        </script>
+    </center>
+</body>
+</html>

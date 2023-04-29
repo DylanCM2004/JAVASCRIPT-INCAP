@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ciclo while</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./img/incap.png" alt="" height="150" width="150">
+        <h1>boletin notas de programación</h1>
+        <h2>MATERIA PAE JAVASCRIPT</h2>
+        <br><br>
+        <p>notas de los estudiantes son: [1=DESEMPEÑO, 2=TALLERES, 3=EXAMENES]</p> 
+        <script>
+            let notas_std, suma, prom;
+            suma = 0;
+            prom =0;
+            num=1;
+            //entrada
+            nomb_std= prompt("ingrese nombre del estudiante...");
+            // proceso ciclo while para ingresar las notas de los estudiantes
+            while(num<=3){
+                notas_std=parseFloat(prompt("INGRESE NOTA STD...."));
+                suma+= notas_std; // acumula o suma las notas 
+                num++;
+            }
+            // calcular promedio de notas
+            prom=suma/3; // se puede tambien escribir suma/ (num-1)  eso es para que quede igual al contador de notas que se lleva
+            //validar calificaciones std
+            if(prom>=3.0){
+                swal("APRECIASDO ESTUDIANTE", "APROBASTE LA MATERIA", "success");
+            }
+            else{
+                swal("APRECIASDO ESTUDIANTE", "REPROBASTE LA MATERIA", "error");
+            }
+            // SALIDA
+            document.write("<br>");
+            document.write("NOTA FINAL DE LA MATERIA DE JAVASCRIPT..."+ prom);
+            toFixed(2)+"<br>";
+        </script>
+    </center>
+</body>
+</html>
