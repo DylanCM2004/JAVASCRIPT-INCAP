@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO SPLICE</title>
+</head>
+<body>
+    <center>
+        <img src="./img/incap.png" alt="" height="150" width="150">
+        <h1>METODO SPLICE ARRAYS</h1>
+        <h2>BUSQUEDA / ELIMINACION DE ELEMENTOS</h2>
+        <br><br>
+        <p>EL NUEVO ARRAYS ES EL SIGUIENTE</p>
+        <script>
+            //CREACION
+        let num;
+        let std= new Array();
+        //captura
+        num=parseInt(prompt("INGRESE LA CANTIDAD DE ELEMENTOS A GUARDAR..."));
+        for(i=0;i<num;i++){
+            std[i]=prompt("INGRESE NOMBRE STD  GUARDAR...")
+        }
+        //BUSQUEDA
+        let datob =prompt("INGRESE NOMBRE STD A EXTERMINAR..");
+        let find=std.indexOf(datob.trim());  
+// APLICA EL METODO SPLICE.........................
+        if (find>-1){
+            let index= std.splice(find,1); // ELIMINA LA UBICACION ENCONTRADA
+            alert(datob+" A SIDO EXTERMINADO..."+ "\n"+"LISTA NUEVA"+std);
+        }
+        else{
+            alert("ERROR...OBJETIVO NO ENCONTRADO EN ARRAY");
+        }
+        document.write(std+",");
+        console.log(std);
+        </script>
+    </center>
+</body>
+</html>
