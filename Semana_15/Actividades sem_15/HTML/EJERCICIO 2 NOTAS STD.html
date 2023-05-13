@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTAS STD</title>
+    <link rel="stylesheet" href="../CSS/NOTAS.css">
+    <script src="../JS/notas.js"></script>
+</head>
+<body>
+    <form class="form">
+        <h2>Calculo de Notas PAE JS</h2>
+        
+        <label for="Nota 1">Nota 1</label>
+        <input type="text" id="Nota1" class="box">
+
+        <label for="Nota 2">Nota 2</label>
+        <input type="text" id="Nota2" class="box">
+
+        <label for="Nota 3">Nota 3</label>
+        <input type="text" id="Nota3" class="box">
+
+        <label for="Def">Definitiva</label>
+        <input type="text" id="Definitiva" class="box" disabled>
+        <!-- seccion de botones y funciones -->
+        <input type="button" value="Calcular" class="submit" onclick="promedio()">
+        <input type="button" value="limpiar" class="submit" onclick="limpiar()">
+
+    </form>
+</body>
+</html>

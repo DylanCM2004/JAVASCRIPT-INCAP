@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOSTAR</title>
+    <link rel="stylesheet" href="../CSS/APOSTAR.css">
+    <script src="../JS/APOSTAR.js"></script>
+</head>
+<body>
+    <center>
+        <h1>APEUESTAS DEL NUMERO ALEATORIO</h1>
+        <h2>METODO MATH- RANDOM</h2>
+        <h3>ADIVINAR NUMEROS DEL 1 AL 10</h3>
+        <br><br>
+        <form>
+            <label>NUMERO APOSTADO</label>
+             <input type="text" id="apostado"><br>
+             <br><br>
+             <label>NUMERO RANDOM-SISTEMA</label>
+            <input type="text" id="resultado" disabled><br>
+            <br><br> 
+            <label>RESULTADO APUESTA</label>
+             <input type="text" id="salida" disabled><br>
+           </form>
+           <br><br>
+           <div id="boton">
+           <button onclick="apostar();">APOSTAR !!</button>
+           <button onclick="cancel();">BORRAR !!</button>
+           </div>
+    </center>
+</body>
+</html>
