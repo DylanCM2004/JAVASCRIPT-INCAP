@@ -1,0 +1,122 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO FINAL HTML</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Seccion enlace a pagina fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- PARA EL ESTILO DE LOS TITULOS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <!-- PARA LOS SUBTITULOS O DIVISIONES EN LAS PAGINAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="icon" type="image.png" href="../img/Sabine_Starbird.webp">
+</head>
+<body>
+    <!-- cabecera -->
+        <!-- LOGO, TITULO Y SUBTITULO DE LA PAGINA -->
+        <header class="marca">
+            <div>
+                <div class="principio">
+                <img src="../img/Sabine_Starbird.webp" alt="" height="100" width="100">
+                <br>
+                <h1>CARRITO DE COMPRAS</h1>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="barra">
+            <div>
+                <div class="lista">
+                    <ul class="navegacion">
+                        <div>
+                            <div class="inv">
+                                <li><a href="./INDEX.html"><i class="fa fa-igloo"></i> INICIO</a></li>
+                            </div>
+                            <div class="inv">
+                                <li><a href="./CATALOGO.html"><i class="fa fa-list"></i> CATÁLOGO</a></li>
+                            </div>
+                            <div class="inv">
+                                <li><a href="./EVENTOS.html"><i class="fa fa-calendar-week"></i> EVENTOS</a></li>
+                            </div>
+                            <div class="inv">
+                                <li><a href="./CONTACTO.html"><i class="fa fa-headset"></i> CONTACTOS</a></li>
+                            </div>
+                            <div class="inv">
+                                <li><a href="./carrito de compra.html"><i class="fa fa-dolly"></i></a></li>
+                            </div>
+                            <div class="inv">
+                                <li><a href=""><i class="fa fa-user"></i></a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br><br><br><br><br>
+        
+        <!-- ................................................... -->
+        <div class="wrapper">
+            <aside>
+                <header>
+                    <h1 class="logo">Carrito</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="boton-menu boton-volver" href="./carrito.html"><!-- index pag principal-->
+                                <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-menu boton-carrito active" href="../html/carrito.html">
+                                <i class="bi bi-cart-fill"></i> Carrito
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <footer>
+                    <p class="texto-footer">©️ 2023</p>
+                </footer>
+            </aside>
+            <main>
+                <h2 class="titulo-principal">Carrito</h2>
+                <div class="contenedor-carrito">
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+    
+                    <div id="carrito-productos" class="carrito-productos disabled">
+                        <!-- Esto se va a completar con el JS -->
+                    </div>
+    
+                    <div id="carrito-acciones" class="carrito-acciones disabled">
+                        <div class="carrito-acciones-izquierda">
+                            <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                        </div>
+                        <div class="carrito-acciones-derecha">
+                            <div class="carrito-acciones-total">
+                                <p>Total:</p>
+                                <p id="total"></p>
+                            </div>
+                            <button id="carrito-acciones-comprar" onclick="envios()" class="carrito-acciones-comprar">Comprar ahora</button>
+                        </div>
+                    </div>
+    
+                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+    
+                </div>
+            </main>
+        </div>
+        
+        <script src="../JS/carrito.js"></script><!-- carrito.js -->
+    </body>
+    </html>
